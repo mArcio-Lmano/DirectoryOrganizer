@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/talocha/C/clean_folder/main.c" "CMakeFiles/clean_folder.dir/main.c.o" "gcc" "CMakeFiles/clean_folder.dir/main.c.o.d"
+  "/home/talocha/C/CleanDirectory/main.c" "CMakeFiles/clean_folder.dir/main.c.o" "gcc" "CMakeFiles/clean_folder.dir/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
