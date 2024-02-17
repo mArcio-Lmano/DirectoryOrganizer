@@ -1,0 +1,3 @@
+/home/talocha/C/clean_folder/build/CMakeFiles/clean_folder.dir
+/home/talocha/C/clean_folder/build/CMakeFiles/edit_cache.dir
+/home/talocha/C/clean_folder/build/CMakeFiles/rebuild_cache.dir
