@@ -8,9 +8,11 @@
 
 // Define a struct to hold file information including extension and full path
 struct FileInfo {
-    const char *extension;   // File extension (NULL if not present)
+    char *extension;   // File extension (NULL if not present)
     char *full_path;         // Full path of the file
 };
+
+
 
 /// Function to check extension and return both extension and full path
 struct FileInfo checkExtension(const char *full_path, const struct stat *path_stat) {
@@ -43,6 +45,7 @@ struct FileInfo checkExtension(const char *full_path, const struct stat *path_st
         // No file extension found
         info.extension = NULL;
     }
+    // free(file_extension);
 
     // Allocate memory for full path and copy the content
     info.full_path = strdup(full_path);
@@ -113,9 +116,7 @@ int main(int argc, char **argv) {
     int entries_counter = entriesCounter(path);
     printf("Entries Count: %i\n", entries_counter);
 
-    struct FileInfo *files_information;
-    files_information = (struct FileInfo *)malloc(entries_counter * sizeof(struct FileInfo));
-
+    struct FileInfo *files_information = (struct FileInfo *)malloc(entries_counter * sizeof(struct FileInfo));
 
     if (files_information == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
@@ -132,7 +133,7 @@ int main(int argc, char **argv) {
         if (strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0) {
             // Build the full path of the entry
             char full_path[PATH_MAX];
-            snprintf(full_path, sizeof(full_path), "%s/%s", path, entry->d_name);
+            snprintf(full_path, sizeof(full_path), "%s%s", path, entry->d_name);
 
             // Allocate memory dynamically for full_path
             char *dynamic_full_path = strdup(full_path);
@@ -155,15 +156,17 @@ int main(int argc, char **argv) {
 
             // Free dynamically allocated memory for full_path
             free(dynamic_full_path);
+            // free(full_path);
         }
     }   
 
     printf("\n");
     for (int i = 0; i < file_index; ++i) {
         printf("File %d: extension = %s, full path = %s\n", i + 1, files_information[i].extension, files_information[i].full_path);
+        free(files_information[i].extension);
+        free(files_information[i].full_path);
     }
 
-    // Free dynamically allocated memory
     free(files_information);
 
     // Close the directory
