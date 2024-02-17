@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/talocha/C/CleanDirectory/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/clean_folder.dir/all
+all: CMakeFiles/directory_organizer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/clean_folder.dir/clean
+clean: CMakeFiles/directory_organizer.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/clean_folder.dir
+# Target rules for target CMakeFiles/directory_organizer.dir
 
 # All Build rule for target.
-CMakeFiles/clean_folder.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/talocha/C/CleanDirectory/build/CMakeFiles --progress-num=1,2 "Built target clean_folder"
-.PHONY : CMakeFiles/clean_folder.dir/all
+CMakeFiles/directory_organizer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/talocha/C/CleanDirectory/build/CMakeFiles --progress-num=1,2 "Built target directory_organizer"
+.PHONY : CMakeFiles/directory_organizer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/clean_folder.dir/rule: cmake_check_build_system
+CMakeFiles/directory_organizer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/talocha/C/CleanDirectory/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clean_folder.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/directory_organizer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/talocha/C/CleanDirectory/build/CMakeFiles 0
-.PHONY : CMakeFiles/clean_folder.dir/rule
+.PHONY : CMakeFiles/directory_organizer.dir/rule
 
 # Convenience name for target.
-clean_folder: CMakeFiles/clean_folder.dir/rule
-.PHONY : clean_folder
+directory_organizer: CMakeFiles/directory_organizer.dir/rule
+.PHONY : directory_organizer
 
 # clean rule for target.
-CMakeFiles/clean_folder.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/clean
-.PHONY : CMakeFiles/clean_folder.dir/clean
+CMakeFiles/directory_organizer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/clean
+.PHONY : CMakeFiles/directory_organizer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

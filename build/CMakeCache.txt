@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=clean_folder
+CMAKE_PROJECT_NAME:STATIC=directory_organizer
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,6 +223,15 @@ clean_folder_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 clean_folder_SOURCE_DIR:STATIC=/home/talocha/C/CleanDirectory
+
+//Value Computed by CMake
+directory_organizer_BINARY_DIR:STATIC=/home/talocha/C/CleanDirectory/build
+
+//Value Computed by CMake
+directory_organizer_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+directory_organizer_SOURCE_DIR:STATIC=/home/talocha/C/CleanDirectory
 
 
 ########################

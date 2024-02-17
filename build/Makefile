@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named clean_folder
+# Target rules for targets named directory_organizer
 
 # Build rule for target.
-clean_folder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean_folder
-.PHONY : clean_folder
+directory_organizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 directory_organizer
+.PHONY : directory_organizer
 
 # fast build rule for target.
-clean_folder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/build
-.PHONY : clean_folder/fast
+directory_organizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/build
+.PHONY : directory_organizer/fast
 
-main.o: main.c.o
-.PHONY : main.o
+directory_organizer.o: directory_organizer.c.o
+.PHONY : directory_organizer.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/main.c.o
-.PHONY : main.c.o
+directory_organizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/directory_organizer.c.o
+.PHONY : directory_organizer.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+directory_organizer.i: directory_organizer.c.i
+.PHONY : directory_organizer.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/main.c.i
-.PHONY : main.c.i
+directory_organizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/directory_organizer.c.i
+.PHONY : directory_organizer.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+directory_organizer.s: directory_organizer.c.s
+.PHONY : directory_organizer.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_folder.dir/build.make CMakeFiles/clean_folder.dir/main.c.s
-.PHONY : main.c.s
+directory_organizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/directory_organizer.dir/build.make CMakeFiles/directory_organizer.dir/directory_organizer.c.s
+.PHONY : directory_organizer.c.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... clean_folder"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... directory_organizer"
+	@echo "... directory_organizer.o"
+	@echo "... directory_organizer.i"
+	@echo "... directory_organizer.s"
 .PHONY : help
 
 

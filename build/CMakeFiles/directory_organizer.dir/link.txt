@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/directory_organizer.dir/directory_organizer.c.o -o directory_organizer 

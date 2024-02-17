@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "clean_folder",
+					"name" : "directory_organizer",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "clean_folder::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-clean_folder-2f786d719e9055bc8221.json",
-					"name" : "clean_folder",
+					"id" : "directory_organizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-directory_organizer-fdf1762c793007ed7d6f.json",
+					"name" : "directory_organizer",
 					"projectIndex" : 0
 				}
 			]

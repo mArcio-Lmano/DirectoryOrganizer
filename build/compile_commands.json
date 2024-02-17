@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/talocha/C/CleanDirectory/build",
-  "command": "/usr/bin/gcc -g -o CMakeFiles/clean_folder.dir/main.c.o -c /home/talocha/C/CleanDirectory/main.c",
-  "file": "/home/talocha/C/CleanDirectory/main.c",
-  "output": "CMakeFiles/clean_folder.dir/main.c.o"
-}
-]

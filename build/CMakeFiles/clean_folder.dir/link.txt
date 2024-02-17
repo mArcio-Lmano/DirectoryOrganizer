@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/clean_folder.dir/main.c.o -o clean_folder 
