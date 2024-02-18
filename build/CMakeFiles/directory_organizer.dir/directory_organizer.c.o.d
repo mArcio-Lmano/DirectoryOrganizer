@@ -1,5 +1,5 @@
 CMakeFiles/directory_organizer.dir/directory_organizer.c.o: \
- /home/talocha/C/CleanDirectory/directory_organizer.c \
+ /home/talocha/C/DirectoryOrganizer/directory_organizer.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \

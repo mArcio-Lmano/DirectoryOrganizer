@@ -1,4 +1,4 @@
-# Install script for directory: /home/talocha/C/CleanDirectory
+# Install script for directory: /home/talocha/C/DirectoryOrganizer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/talocha/C/CleanDirectory/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/talocha/C/DirectoryOrganizer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

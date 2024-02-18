@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/talocha/C/CleanDirectory/directory_organizer.c" "CMakeFiles/directory_organizer.dir/directory_organizer.c.o" "gcc" "CMakeFiles/directory_organizer.dir/directory_organizer.c.o.d"
+  "/home/talocha/C/DirectoryOrganizer/directory_organizer.c" "CMakeFiles/directory_organizer.dir/directory_organizer.c.o" "gcc" "CMakeFiles/directory_organizer.dir/directory_organizer.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
