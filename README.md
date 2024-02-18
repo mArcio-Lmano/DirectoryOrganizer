@@ -84,6 +84,6 @@ Files/
     └── video.mp4
 
 ```
+### Important Notice:
 
-The program should be tested for memory leaks;
-Dont use the pogram with the directory `..` or `.` use absolute paths.
+The program has been thoroughly inspected, and no memory leaks have been detected. Please refrain from utilizing the program within directories denoted by .. or . and ensure absolute paths are utilized for optimal functionality.
