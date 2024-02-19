@@ -248,23 +248,35 @@ int main(int argc, char **argv) {
     if (folders_created == 0) {
         printf("\tNone\n");
     }
-
-    printf("\nFiles moved:");
-    int number_of_files_moved = 0;
-    // Move files into folders based on their extensions
-    for (int i = 0; i < dir_info.number_files; i++) {
-        struct FileInfo file = dir_info.files_info[i];
-        if (file.extension != NULL) {
-            char *file_name = strrchr(file.full_path, '/') + 1;
-            char new_path[PATH_MAX];
-            snprintf(new_path, sizeof(new_path), "%s/%s/%s", path, file.extension, file_name);
-            rename(file.full_path, new_path);
-            printf("\n\t%s ====> %s", file.full_path, new_path);
-            number_of_files_moved++;
+    printf("\nDo you wish to move the files? [Y/n]\n");
+    char user_answer;
+    scanf(" %c", &user_answer); // Corrected the format specifier and added the address-of operator
+    
+    // Now you can use user_answer variable to check the user's response
+    if (user_answer == 'Y' || user_answer == 'y') {
+        printf("\nFiles moved:");
+        int number_of_files_moved = 0;
+        // Move files into folders based on their extensions
+        for (int i = 0; i < dir_info.number_files; i++) {
+            struct FileInfo file = dir_info.files_info[i];
+            if (file.extension != NULL) {
+                char *file_name = strrchr(file.full_path, '/') + 1;
+                char new_path[PATH_MAX];
+                snprintf(new_path, sizeof(new_path), "%s/%s/%s", path, file.extension, file_name);
+                rename(file.full_path, new_path);
+                printf("\n\t%s ====> %s", file.full_path, new_path);
+                number_of_files_moved++;
+            }
         }
-    }
-    if (number_of_files_moved == 0){
-        printf("\tNone\n");
+        if (number_of_files_moved == 0){
+            printf("\tNone\n");
+        }
+    } else if (user_answer == 'N' || user_answer == 'n') {
+        return 0;
+    } else {
+        // Invalid input
+        printf("Invalid input\n");
+        return 1;
     }
 
     // Close the directory

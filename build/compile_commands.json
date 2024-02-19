@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/talocha/C/DirectoryOrganizer/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/directory_organizer.dir/directory_organizer.c.o -c /home/talocha/C/DirectoryOrganizer/directory_organizer.c",
+  "file": "/home/talocha/C/DirectoryOrganizer/directory_organizer.c",
+  "output": "CMakeFiles/directory_organizer.dir/directory_organizer.c.o"
+}
+]
