@@ -250,9 +250,8 @@ int main(int argc, char **argv) {
     }
     printf("\nDo you wish to move the files? [Y/n]\n");
     char user_answer;
-    scanf(" %c", &user_answer); // Corrected the format specifier and added the address-of operator
+    scanf(" %c", &user_answer); 
     
-    // Now you can use user_answer variable to check the user's response
     if (user_answer == 'Y' || user_answer == 'y') {
         printf("\nFiles moved:");
         int number_of_files_moved = 0;
